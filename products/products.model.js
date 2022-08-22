@@ -21,7 +21,14 @@ function getProductsByPrice(min, max) {
   });
 }
 
+function getProductById(ID) {
+  return products.find((product) => {
+    return product.id === ID;
+  });
+}
+
 module.exports = {
   getAllProducts,
   getProductsByPrice,
+  getProductById
 };
